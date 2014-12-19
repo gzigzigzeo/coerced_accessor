@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Human readable dates
 
-Motivation: Rails Time.new = String can parse most date formats. On the other hand, if user inputs '12.01.2001' in text field - we should keep this value after form submission. Instead of this he will see `Time#to_s` result (`"2001-01-12 00:00:00 +0300"`).
+Motivation: Rails Time.new = String can parse most date formats. On the other hand, if user inputs '12.01.2001' in text field - we should keep this value after form submission. Instead of this he will see `Time#to_s` result (`"2001-01-12 00:00:00 +0300"`) by default.
 
 ```ruby
 class UserForm
