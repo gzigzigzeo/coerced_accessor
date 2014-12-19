@@ -1,4 +1,4 @@
-class TestMock
+class TimeMock
   extend CoercedAccessor::Time
 
   attr_accessor :date, :date_with_time, :just_year

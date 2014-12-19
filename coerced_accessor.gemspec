@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = CoercedAccessor::VERSION
   spec.authors       = ["Viktor Sokolov"]
   spec.email         = ["gzigzigzeo@evilmartians.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Provides object attribute aliases coercing values to/from human readable format}
+  spec.description   = %q{Provides object attribute aliases coercing values to/from human readable format}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "activesupport"
 end

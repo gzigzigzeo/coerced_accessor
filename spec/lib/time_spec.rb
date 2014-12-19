@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe CoercedAccessor::Time do
-  subject { TestMock.new }
+  subject { TimeMock.new }
 
   let(:date) { DateTime.new(2009, 1, 1) }
   let(:date_with_time) { DateTime.new(2009, 1, 1, 12, 0) }

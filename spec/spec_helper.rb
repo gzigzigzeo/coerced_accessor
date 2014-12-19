@@ -11,7 +11,9 @@ SimpleCov.start do
 end
 
 require 'coerced_accessor'
-require 'support/test_mock'
+require 'support/time_mock'
+require 'support/compound_mock'
+require 'support/split_mock'
 
 RSpec.configure do |config|
   config.order = :random
