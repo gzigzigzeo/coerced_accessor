@@ -5,5 +5,5 @@ class TimeMock
 
   time_coerced_accessor(:date, "%Y%m%d")
   time_coerced_accessor(:date_with_time, "%Y%m%d %H:%M")
-  time_coerced_accessor(:just_year, "%Y", as: :year)
+  time_coerced_accessor(:just_year, "%d.%m.%Y", as: :year)
 end

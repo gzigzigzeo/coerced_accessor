@@ -2,10 +2,10 @@ module CoercedAccessor
   module Time
     def time_coerced_accessor(attribute, format = nil, options = {})
       as = options.delete(:as) || "#{attribute}_human"
-      time_class = options.delete(:time_class) || ::Time
+      time_class = options.delete(:time_class) || ::DateTime
 
       define_method("#{as}=") do |value|
-        time = time_class.strptime(value, format) rescue nil
+        time = time_class.parse(value, format) rescue nil
         send("#{attribute}=", time)
       end
 
