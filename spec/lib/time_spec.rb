@@ -27,7 +27,7 @@ describe CoercedAccessor::Time do
   end
 
   it ':as option works' do
-    subject.year = "20090202"
+    subject.year = "2009"
     expect(subject.year).to eq("2009")
   end
 end
